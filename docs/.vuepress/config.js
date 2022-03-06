@@ -1,5 +1,8 @@
 module.exports = {
   title: 'TickNet应用开发文档',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   themeConfig: {
     lastUpdated: 'Last Updated',
     repo: 'https://github.com/peterroe/ticknet-docs',
@@ -41,7 +44,6 @@ module.exports = {
         'install',
         'dev',
         'dir',
-        // 'src',
         'request',
         'views',
       ],
@@ -50,6 +52,8 @@ module.exports = {
       ],
       '/swzl-admin/': [
         '',
+        'install',
+        'dir'
       ],
       '/swzl-mobile/': [
         '',

@@ -14,10 +14,12 @@
 * 外网地址：<https://secondclass.ticknet.hnust.cn>（通过外网的Nginx转发到内网）
 * 内网地址：<http://49.123.0.27:8086>
 * 文件路径：49.123.0.27 - /app/secondclass/
+* Ngnix配置路径：49.123.0.27 - /etc/nginx/conf.d/secondclass.conf
 
 测试地址：
 * 内网：<http://49.123.0.27:9999>
 * 文件地址：49.123.0.27 - /app/secondclassTest/
+* Ngnix配置路径：49.123.0.27 - /etc/nginx/conf.d/secondclasstest.conf
 
 ## 部署服务器
 
