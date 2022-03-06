@@ -31,10 +31,10 @@ module.exports = {
     ],
     sidebar: {
       '/dekt-admin/': [
-        '', /* /dekt-admin/ */
-        'src', /* /dekt-admin/src.html */
-        'api',
+        '',
         'dev',
+        'src',
+        'api',
         'dir',
         'views'
       ],
@@ -47,10 +47,10 @@ module.exports = {
       '/swzl-mobile/': [
         '',
       ],
-      '/xyyz-admin/': [
+      '/xyxz-admin/': [
         '',
       ],
-      '/xyyz-mobile/': [
+      '/xyxz-mobile/': [
         '',
       ],
       '/': [
