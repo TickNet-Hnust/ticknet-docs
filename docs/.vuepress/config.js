@@ -1,6 +1,11 @@
 module.exports = {
   title: 'TickNet应用开发文档',
   themeConfig: {
+    lastUpdated: 'Last Updated',
+    repo: 'https://github.com/peterroe/ticknet-docs',
+    repoLabel: '查看源码',
+    editLinks: true,
+    editLinkText: '帮助我们改善此页面！',
     nav: [
       // { text: 'Guide', link: '/', activeMatch: '^/$|^/guide/' },
       {
@@ -55,7 +60,7 @@ module.exports = {
       ],
       '/': [
         '', /* / */
-        'about', /* /about.html */
+        // 'about', /* /about.html */
       ],
     }
   }
