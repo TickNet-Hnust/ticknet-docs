@@ -1,4 +1,4 @@
-## 核心结构
+## 请求核心结构
 
 与二课核心有关的几乎都在 **src/api/application/secondClass** 目录下
 

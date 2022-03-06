@@ -38,11 +38,12 @@ module.exports = {
     sidebar: {
       '/dekt-admin/': [
         '',
+        'install',
         'dev',
-        'src',
-        'api',
         'dir',
-        'views'
+        // 'src',
+        'request',
+        'views',
       ],
       '/dekt-mobile/': [
         '',
