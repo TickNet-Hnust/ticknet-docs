@@ -2,11 +2,22 @@
 
 <https://secondclass.ticknet.hnust.cn>
 
+
+## 运维架构
+
+![img](https://img-blog.csdnimg.cn/a18835208f604720a01862055e19137f.png)
+
 ## 部署地址
 
-线上地址：<https://secondclass.ticknet.hnust.cn>
+线上环境：
 
-测试地址：<http://49.123.0.27:9999>
+* 外网地址：<https://secondclass.ticknet.hnust.cn>（通过外网的Nginx转发到内网）
+* 内网地址：<http://49.123.0.27:8086>
+* 文件路径：49.123.0.27 - /app/secondclass/
+
+测试地址：
+* 内网：<http://49.123.0.27:9999>
+* 文件地址：49.123.0.27 - /app/secondclassTest/
 
 ## 部署服务器
 
