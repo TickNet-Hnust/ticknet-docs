@@ -49,6 +49,10 @@ module.exports = {
       ],
       '/dekt-mobile/': [
         '',
+        'install',
+        'dev',
+        'dir',
+        'deploy'
       ],
       '/swzl-admin/': [
         '',
