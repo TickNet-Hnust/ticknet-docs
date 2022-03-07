@@ -13,28 +13,25 @@ module.exports = {
     nav: [
       // { text: 'Guide', link: '/', activeMatch: '^/$|^/guide/' },
       {
-        text: '第二课堂小程序',
-        link: '/dekt-mobile/'
+        text: '第二课堂',
+        items: [
+          { text: '第二课堂小程序', link: '/dekt-mobile/' },
+          { text: '第二课堂管理端', link: '/dekt-admin/' }
+        ]
       },
       {
-        text: '第二课堂管理端',
-        link: '/dekt-admin/',
+        text: '校园闲置',
+        items: [
+          { text: '校园闲置移动端', link: '/xyxz-mobile/' },
+          { text: '校园闲置管理端', link: '/xyxz-admin/' }
+        ]
       },
       {
-        text: '失物招领移动端',
-        link: '/swzl-mobile/'
-      },
-      {
-        text: '失物招领管理端',
-        link: '/swzl-admin/'
-      },
-      {
-        text: '校园闲置移动端',
-        link: '/xyyz-mobile/'
-      },
-      {
-        text: '校园闲置管理端',
-        link: '/xyyz-admin/'
+        text: '失物招领',
+        items: [
+          { text: '失物招领移动端', link: '/swzl-mobile/' },
+          { text: '失物招领管理端', link: '/swzl-admin/' }
+        ]
       },
 
     ],
