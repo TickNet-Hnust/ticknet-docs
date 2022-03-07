@@ -53,7 +53,8 @@ module.exports = {
       '/swzl-admin/': [
         '',
         'install',
-        'dir'
+        'dir',
+        'deploy'
       ],
       '/swzl-mobile/': [
         '',
