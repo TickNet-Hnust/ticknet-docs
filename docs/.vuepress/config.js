@@ -62,7 +62,8 @@ module.exports = {
       ],
       '/xyxz-admin/': [
         '',
-        'install'
+        'install',
+        'deploy'
       ],
       '/xyxz-mobile/': [
         '',
