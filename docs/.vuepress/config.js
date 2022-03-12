@@ -59,6 +59,7 @@ module.exports = {
       ],
       '/swzl-mobile/': [
         '',
+        'install'
       ],
       '/xyxz-admin/': [
         '',
