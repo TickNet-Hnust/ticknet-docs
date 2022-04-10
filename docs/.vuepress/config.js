@@ -48,6 +48,7 @@ module.exports = {
         '',
         'install',
         'dev',
+        'news',
         'dir',
         'deploy'
       ],
