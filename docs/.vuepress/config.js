@@ -75,6 +75,9 @@ module.exports = {
       '/xyxz-mobile/': [
         '',
       ],
+      '/mdm-mobile/': [
+        ''
+      ],
       '/': [
         '', /* / */
         // 'about', /* /about.html */
