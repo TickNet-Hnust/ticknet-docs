@@ -33,7 +33,12 @@ module.exports = {
           { text: '失物招领管理端', link: '/swzl-admin/' }
         ]
       },
-
+      {
+        text: '面对面项目',
+        items: [
+          { text: '面对面项目移动端', link: '/mdm-mobile/' }
+        ]
+      },
     ],
     sidebar: {
       '/dekt-admin/': [
