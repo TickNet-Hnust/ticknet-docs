@@ -39,3 +39,11 @@ $ pnpm docs:dev
 `docs/.vuepress/config.js` 控制着页面的结构配置
 
 修改 `docs/.vuepress/config.js` 后要重启项目才会生效
+
+## 发布
+
+很简单，更新`master`分支即可自动更新文档（需要半分钟左右，域名下才会同步更新）
+
+```
+$ git push origin master
+```
