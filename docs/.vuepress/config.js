@@ -17,6 +17,7 @@ module.exports = {
         items: [
           { text: '第二课堂小程序', link: '/dekt-mobile/' },
           { text: '第二课堂管理端', link: '/dekt-admin/' }
+          { text: '第二课堂服务端', link: '/dekt-server/' }
         ]
       },
       {
