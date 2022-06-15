@@ -4,4 +4,38 @@
 
 ## 注意
 
-应用的维护人员可以更新完善文档，不知道如何更新可以询问林舒恒
+应用的维护人员可以更新完善文档，越详细越好
+
+## 更新文档
+
+1. 克隆仓库到本地
+
+```shell
+$ git clone git@github.com:TickNet-Hnust/ticknet-docs.git
+$ cd ticknet-docs
+```
+
+2. 启动项目
+
+```shell
+# 确保有Node环境
+$ npm -v
+8.5.5
+
+# 安装pnpm
+$ npm install -g pnpm
+
+# 安装依赖
+$ pnpm i
+
+# 启动项目
+$ pnpm docs:dev
+```
+
+打开：<http://localhost:8080> （端口可能被其他服务占用，以命令行的提示为准）
+
+## 提示
+
+`docs/.vuepress/config.js` 控制着页面的结构配置
+
+修改 `docs/.vuepress/config.js` 后要重启项目才会生效
