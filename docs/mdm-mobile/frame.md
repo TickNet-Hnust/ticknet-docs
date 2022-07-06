@@ -3,7 +3,7 @@
 项目框架使用[https://github.com/antfu/vitesse](https://github.com/antfu/vitesse)
 
 优势：
-![image](https://img-blog.csdnimg.cn/cf3d888934d6403a9638226f71544b90.png)
+![image](https://img-blog.csdnimg.cn/b4915a9416f643ca9abf3d31d4e1a163.png)
 
 1. 组件写在components文件夹里面会自动读取，可以直接使用
 2. composition Api不用引入直接使用
