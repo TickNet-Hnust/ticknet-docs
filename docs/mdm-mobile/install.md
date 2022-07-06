@@ -13,7 +13,7 @@ $ git clone -b main git@github.com:TickNet-Hnust/sign.git
 4. 你将会得到如下目录结构
 
 ## 目录结构
-```shell {}
+```
 ├─ .github
 ├─ .vscode
 ├─ cypress
