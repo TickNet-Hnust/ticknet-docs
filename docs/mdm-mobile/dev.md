@@ -44,6 +44,14 @@ const sign = (code: string, path: string) => {
   })
 }
 ```
+### 注意
+我在这里将cookie的有效期设置成了30天，这样就可避免短时间内用户使用应用时每次都要重新登录，但同时也可能带来一些问题，如果后续出了一些登录状态方面的bug，可以考虑是不是这个地方的造成的
+```js
+export function setToken(token: string) {
+  // return Cookies.set(TokenKey, token)
+  return Cookies.set(TokenKey, token, { expires: 30 })//设置cookie30天过期
+}
+```
 
 ## 开发环境登录
 因为此应用生产环境时调用企业微信内部接口登录，因此在本地开发时需作如下更改
@@ -71,3 +79,8 @@ export function loginByTest() {
 }
 ```
 ![img](https://img-blog.csdnimg.cn/b8a4ea005aaf4142a142833422b38017.png)
+
+#### 同时还需要清除登录状态
+将removeToken()前的注释去掉即可
+
+![img](https://img-blog.csdnimg.cn/ffa83ed14ae24160b33e2c53e379e998.png)
