@@ -70,12 +70,17 @@ export default {
         }, 200)
       }
     },
-    async playAnimation() {
-      // this.$refs.members
-      setTimeout(async () => {
-        await this.playSnow()
-        await this.playFast()
-      }, 1000);
+    playAnimation() {
+      let t = setInterval(() => {
+
+        if(this.$refs.members.length > 0) {
+          clearInterval(t)
+          setTimeout(async () => {
+            await this.playSnow()
+            await this.playFast()
+          }, 1000);
+        }
+      }, 200);
     },
   },
   mounted() {
