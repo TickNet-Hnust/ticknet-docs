@@ -47,3 +47,20 @@ $ pnpm docs:dev
 ```
 $ git push origin master
 ```
+
+
+## 快速修复
+
+> 发现文档有错误？
+
+浏览文档时候发现错误，或者需要补充的，可以快速修复：
+
+![img](https://img-blog.csdnimg.cn/093355d5f95647989b966cb1baec606e.png)
+
+滚动到页面最下面，点击**在Github上编辑此页面**，直接会跳转到对应的代码页面
+
+![img](https://img-blog.csdnimg.cn/580048e1ad784cbfad93ae2b44919b3a.png)
+
+修改后，直接提交即可：
+
+![img](https://img-blog.csdnimg.cn/4f2d5d1ba6d54b95bc6d3bb64a010499.png)
