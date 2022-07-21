@@ -2,9 +2,9 @@
 1. github仓库：[https://github.com/TickNet-Hnust/sign](https://github.com/TickNet-Hnust/sign)
    注：开发中 待开发完成会迁移到另外的仓库
 
-2. 确保自己是TickNet-Hnust组织的成员，如果不是，找管理员添加（蒋俊杰）
+2. 确保自己是`TickNet-Hnust`组织的成员，如果不是，找管理员添加（蒋俊杰）
 
-3. 本地克隆该仓库的main分支
+3. 本地克隆该仓库的`main`分支
 
 ```shell
 $ git clone -b main git@github.com:TickNet-Hnust/sign.git
@@ -41,7 +41,7 @@ $ git clone -b main git@github.com:TickNet-Hnust/sign.git
 ```
 
 ## 启动项目
-采用pnpm安装
+采用`pnpm`安装
 
 ```shell {}
 # 安装pnpm

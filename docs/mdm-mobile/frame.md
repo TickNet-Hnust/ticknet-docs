@@ -5,8 +5,8 @@
 优势：
 ![image](https://img-blog.csdnimg.cn/8c6d955203ef489785e9675ac17d8f23.png)
 
-1. 组件写在components文件夹里面会自动读取，可以直接使用
-2. composition Api不用引入直接使用
+1. 组件写在`components`文件夹里面会自动读取，可以直接使用
+2. `composition Api`不用引入直接使用
 3. 使用[File based routing](https://github.com/antfu/vitesse/tree/main/src/pages) 因此没有router文件夹，pages文件夹下的文件路径就是路由路径
 
 ## 注意
@@ -19,7 +19,7 @@ import router from './router'
 ```js
 import { type UserModule } from "~/types"
 export const install: UserModule = ({ router }) => {
-  //此时即可操作路由
+  //此时即可对路由进行操作
   //例如：router.push('/')
 }
 ```
