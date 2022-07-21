@@ -77,7 +77,11 @@ module.exports = {
         '',
       ],
       '/mdm-mobile/': [
-        ''
+        '',
+        'install',
+        'dev',
+        'dir',
+        'frame'
       ],
       '/': [
         '', /* / */

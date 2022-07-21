@@ -20,7 +20,7 @@ $ cd ticknet-docs
 ```shell
 # 确保有Node环境
 $ npm -v
-8.5.5
+18.5.0
 
 # 安装pnpm
 $ npm install -g pnpm
@@ -47,7 +47,6 @@ $ pnpm docs:dev
 ```
 $ git push origin master
 ```
-
 
 ## 快速修复
 
