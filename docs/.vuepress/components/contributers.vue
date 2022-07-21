@@ -27,7 +27,7 @@ export default {
       const value = (await fetch('https://api.github.com/repos/TickNet-Hnust/ticknet-docs/collaborators', {
         headers: {
           Accept: 'application/vnd.github+json',
-          Authorization: 'token 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'
+          Authorization: 'token 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'
         }
       })).json().then(value => {
         console.log(value)
