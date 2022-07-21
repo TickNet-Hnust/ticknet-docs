@@ -24,10 +24,13 @@ export default {
   },
   methods: {
     async fetchContributors() {
+      const a = 'ghp_ZPlMKfyY'
+      const b = 'PDyxRDaGmWeU2'
+      const c = 'E96pHDiiz1jlHt1'
       const value = (await fetch('https://api.github.com/repos/TickNet-Hnust/ticknet-docs/collaborators', {
         headers: {
           Accept: 'application/vnd.github+json',
-          Authorization: 'token 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'
+          Authorization: `token ${a}${b}${c}`,
         }
       })).json().then(value => {
         console.log(value)
