@@ -1,14 +1,18 @@
 <template>
-  <div v-if="!loading">
-    <h3>Members</h3>
-    <ul class="ul">
-      <li ref="members" v-for="contributor in contributors" class="li" @click="goGithub(contributor.html_url)">
-        <img class="avatar" :src="contributor.avatar_url"  />
-        <a :href="contributor.html_url" class="a">
-          {{ contributor.login }}{{ contributor.permissions.admin ? '(Admin)' : '' }}
-        </a>
-      </li>
-    </ul>
+  <div>
+    <transition name="fade">
+      <div v-if="!loading">
+        <h3>Members</h3>
+        <ul class="ul">
+          <li ref="members" v-for="contributor in contributors" class="li" @click="goGithub(contributor.html_url)">
+            <img class="avatar" :src="contributor.avatar_url"  />
+            <a :href="contributor.html_url" class="a">
+              {{ contributor.login }}{{ contributor.permissions.admin ? '(Admin)' : '' }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -23,7 +27,7 @@ export default {
   },
   methods: {
     async fetchContributors() {
-      // split tokens to avoid github check
+      // Split tokens to avoid github security check
       const a = 'ghp_ZPlMKfyY'
       const b = 'PDyxRDaGmWeU2'
       const c = 'E96pHDiiz1jlHt1'
@@ -132,5 +136,11 @@ export default {
 .a:hover {
   text-decoration: none !important;
 
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
