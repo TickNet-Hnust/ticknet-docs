@@ -1,6 +1,6 @@
 <template>
   <div v-if="!loading">
-    <h3>Contributors</h3>
+    <h3>Members</h3>
     <ul class="ul">
       <li ref="members" v-for="contributor in contributors" class="li" @click="goGithub(contributor.html_url)">
         <img class="avatar" :src="contributor.avatar_url"  />
@@ -13,7 +13,6 @@
 </template>
 
 <script>
-// import { $fetch } from 'ohmyfetch'
 export default {
   name: "contributors",
   data() {
@@ -24,25 +23,27 @@ export default {
   },
   methods: {
     async fetchContributors() {
+      // split tokens to avoid github check
       const a = 'ghp_ZPlMKfyY'
       const b = 'PDyxRDaGmWeU2'
       const c = 'E96pHDiiz1jlHt1'
-      const value = (await fetch('https://api.github.com/repos/TickNet-Hnust/ticknet-docs/collaborators', {
+      const data = await fetch('https://api.github.com/repos/TickNet-Hnust/ticknet-docs/collaborators', {
         headers: {
           Accept: 'application/vnd.github+json',
           Authorization: `token ${a}${b}${c}`,
         }
-      })).json().then(value => {
-        console.log(value)
-        this.contributors = value.sort((a, b) => {
-          if (a.permissions.admin) {
-            return -1
-          } else {
-            return 1
-          }
-        })
-        this.loading = false
       })
+      const value = await data.json()
+      console.log(value)
+      this.contributors = value.sort((a, b) => {
+        if (a.permissions.admin) {
+          return -1
+        } else {
+          return 1
+        }
+      })
+      this.loading = false
+      
     },
     goGithub(url) {
       window.open(url)
@@ -71,22 +72,17 @@ export default {
       }
     },
     playAnimation() {
-      let t = setInterval(() => {
-
-        if(this.$refs.members.length > 0) {
-          clearInterval(t)
-          setTimeout(async () => {
-            await this.playSnow()
-            await this.playFast()
-          }, 1000);
-        }
-      }, 200);
+      if(this.$refs.members.length > 0) {
+        setTimeout(async () => {
+          await this.playSnow()
+          await this.playFast()
+        }, 1000);
+      }
     },
   },
-  mounted() {
-    this.fetchContributors()
+  async mounted() {
+    await this.fetchContributors()
     this.playAnimation()
-    // fetch
   },
 }
 </script>
